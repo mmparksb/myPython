@@ -4,9 +4,13 @@ filename = 'jumsu.json'
 myfile = open(filename, mode='rt', encoding='UTF-8')
 mystring = myfile.read()
 print(type(mystring))
+myfile.close()
+# # with open(filename, mode='rt', encoding='UTF-8'):
+# #     mystring = myfile.read()
+# # end with
+# # with를 사용하면 close 를 하지 않아도 된당
 
 import json
-
 jsonData = json.loads(mystring)
 print(type(jsonData))
 

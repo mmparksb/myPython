@@ -1,13 +1,12 @@
 from xml.etree.ElementTree import Element, ElementTree, SubElement
 
 mydict = {
-    'hong': ('홍준표', 60, 80, 70), 'park': ('박정희', 50, 70, 95)
+    'hong': ('홍준표', 60, 80, 70),
+    'park': ('박정희', 50, 70, 95)
 }
-
 print(mydict)
 
 xmlData = Element('students')
-
 for key, mytuple in mydict.items():
     # print(key)
     # print(mytuple)
@@ -26,7 +25,6 @@ for key, mytuple in mydict.items():
     SubElement(saram, '영어').text = str(eng)
     SubElement(saram, '수학').text = str(math)
 # end for
-
 
 def indent(elem, level=0):
     mytab = '\t'

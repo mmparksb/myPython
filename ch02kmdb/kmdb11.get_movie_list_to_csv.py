@@ -31,10 +31,10 @@ def movieExtractor(pageNumber, pageSize, thisYear):
     parameter += '&itemPerPage=' + str(pageSize)
     parameter += '&openStartDt=' + str(thisYear)
 
-    movie_name = '행복'
-    encoded_movie_name = urllib.parse.quote(movie_name, encoding='UTF-8')
-    parameter += '&movieNm=' + encoded_movie_name
-    print('[' + encoded_movie_name + ']')
+    # movie_name = '행복'
+    # encoded_movie_name = urllib.parse.quote(movie_name, encoding='UTF-8')
+    # parameter += '&movieNm=' + encoded_movie_name
+    # print('[' + encoded_movie_name + ']')
 
     url = end_point + parameter
     # print(url)
