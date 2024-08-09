@@ -23,4 +23,3 @@ sungjukInfo('박정희', 80)  # positional argument
 sungjukInfo(math=30, eng=90, name='심현철', kor=100)  # keyword argument
 
 sungjukInfo('권유정', 50, math=70) # 혼합 형태 ## keyword 마지막에
-
