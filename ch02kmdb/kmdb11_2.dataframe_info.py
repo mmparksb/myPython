@@ -56,5 +56,3 @@ dataframe.to_csv(filename, index=False, encoding=myencoding)
 print(filename + ' 파일이 저장되었습니다.')
 
 
-
-
